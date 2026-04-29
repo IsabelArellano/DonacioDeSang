@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+/* ocultar pantallas */
+.hidden {
+    display: none;
+}
+
+/* LOGIN */
+#login {
+    margin-top: 80px;
+}
+
+/* INSTRUCCIONES */
+#instructions {
+    margin-top: 80px;
+}
+
+/* PUZZLE FORMATO DIN A4 */
+#puzzle {
+    width: 420px;
+    height: 594px;
+    margin: 20px auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 2px;
+}
+
+/* piezas adaptadas al nuevo tamaño */
+.piece {
+    width: 100%;
+    height: 100%;
+    background-size: 420px 594px;
+    border: 1px solid #ccc;
+    cursor: grab;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Puzle Donació de Sang</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<!-- 🔐 PANTALLA 1: LOGIN -->
+<div id="login">
+    <h1>🔐 Introdueix el codi</h1>
+    <p>Introdueix el codi obtingut a les proves</p>
+
+    <input type="text" id="codeInput" placeholder="Ex: 2749">
+    <button onclick="checkCode()">Entrar</button>
+
+    <p id="error"></p>
+</div>
+
+<!-- 📜 PANTALLA 2: INSTRUCCIONS -->
+<div id="instructions" class="hidden">
+    <h2>🧩 Instruccions del joc</h2>
+
+    <p>
+        Hauràs de completar el puzle arrossegant les peces amb el ratolí.
+        Reconstrueix el pòster de la campanya de donació de sang el més ràpid possible.
+    </p>
+
+    <button onclick="startGame()">▶ PLAY</button>
+</div>
+
+<!-- 🎮 PANTALLA 3: JOC -->
+<div id="game" class="hidden">
+
+    <h2>⏱ Temps: <span id="timer">0</span> segons</h2>
+
+    <div id="puzzle"></div>
+
+</div>
+
+<script src="Game.js"></script>
+</body>
+</html>
